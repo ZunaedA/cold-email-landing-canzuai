@@ -1,0 +1,221 @@
+
+
+    /* ── CSS variables — flip all colors by toggling .dark on <body> ── */
+    body {
+      --bg:           #ffffff;
+      --bg-tile:      #f4f4f4;
+      --border:       #e0e0e0;
+      --text-main:    #111111;
+      --text-muted:   #555555;
+      --text-faint:   #999999;
+      --toggle-bg:    #eeeeee;
+      --toggle-color: #333333;
+    }
+
+    body.dark {
+      --bg:           #0d0d0d;
+      --bg-tile:      #141414;
+      --border:       #222222;
+      --text-main:    #ffffff;
+      --text-muted:   #999999;
+      --text-faint:   #444444;
+      --toggle-bg:    #1f1f1f;
+      --toggle-color: #cccccc;
+    }
+
+    /* ── Reset & Base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: var(--bg);
+      color: var(--text-main);
+      font-family: 'Georgia', serif;
+      min-height: 100vh;
+      transition: background 0.2s ease, color 0.2s ease;
+    }
+
+    /* ── Layout wrapper ── */
+    .page {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 0 16px 60px;
+    }
+
+    /* ── Header ── */
+    header {
+      padding: 24px 0 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      border-bottom: 1px solid var(--border);
+      margin-bottom: 40px;
+    }
+
+    header img {
+      height: 32px;
+      width: auto;
+    }
+
+    /* ── Toggle button ── */
+    #mode-toggle {
+      position: absolute;
+      right: 0;
+      background: var(--toggle-bg);
+      border: 1px solid var(--border);
+      color: var(--toggle-color);
+      font-size: 18px;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s ease;
+    }
+
+    #mode-toggle:hover { opacity: 0.8; }
+
+    #mode-toggle svg {
+      width: 20px;
+      height: 20px;
+      stroke: #E8920A;
+      transition: stroke 0.2s ease;
+    }
+
+    /* ── Headline section ── */
+    .headline {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+
+    .headline .eyebrow {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #E8000D;
+      margin-bottom: 14px;
+    }
+
+    .headline h1 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(26px, 5vw, 36px);
+      font-weight: bold;
+      line-height: 1.2;
+      color: var(--text-main);
+      margin-bottom: 16px;
+    }
+
+    .guarantee {
+      font-family: 'Raleway', sans-serif;
+      font-size: clamp(14px, 3vw, 18px);
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #E8000D;
+      margin-top: 12px;
+    }
+
+    /* ── VSL video embed ── */
+    .video-wrapper {
+      width: 100%;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+      margin-bottom: 32px;
+    }
+
+    /* ── CTA section ── */
+    .cta {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .cta a {
+      display: inline-block;
+      background: #E8000D;
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 17px;
+      font-weight: 900;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      padding: 18px 48px;
+      border-radius: 4px;
+      width: 100%;
+      max-width: 480px;
+      transition: background 0.15s ease;
+    }
+
+    .cta a:hover { background: #c40000; }
+
+    .cta .subtext {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: var(--text-faint);
+      margin-top: 10px;
+    }
+
+    /* ── Feature tiles ── */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      margin-bottom: 48px;
+    }
+
+    .feature-tile {
+      background: var(--bg-tile);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 20px 14px;
+      text-align: center;
+    }
+
+    .feature-tile .icon {
+      font-size: 28px;
+      margin-bottom: 10px;
+    }
+
+    .feature-tile h3 {
+      font-family: 'Raleway', sans-serif;
+      font-size: 13px;
+      font-weight: 900;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .feature-tile p {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* ── Divider ── */
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin-bottom: 48px;
+    }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      color: var(--text-faint);
+    }
+
+    /* ── Mobile tweak ── */
+    @media (max-width: 520px) {
+      .features { grid-template-columns: 1fr; }
+    }
+
+  
