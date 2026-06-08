@@ -4,109 +4,317 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Canzu AI — Done-For-You Cold Email</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&family=DM+Serif+Display:ital@0;1&family=Montserrat:wght@400;500;600;700;900&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <div class="page">
-
-    <!-- Header -->
-    <header>
-      <img id="logo" src="Logos/full-logo-darkmode.png" alt="Canzu AI">
-      <button id="mode-toggle" aria-label="Toggle dark mode">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M9 21h6"/>
-        <path d="M12 3a6 6 0 0 1 6 6c0 2.4-1.4 4.5-3 5.4V17H9v-2.6C7.4 13.5 6 11.4 6 9a6 6 0 0 1 6-6z"/>
-        <line x1="9" y1="17" x2="9" y2="19"/>
-        <line x1="15" y1="17" x2="15" y2="19"/>
-      </svg>
-    </button>
-    </header>
-
-    <!-- Headline -->
-    <div class="headline">
-      <h1>We Book Sales Calls Directly Into Your Calendar.</h1>
-      <p class="guarantee">Only Pay Per Meeting Booked.</p>
-    </div>
-
-    <!-- VSL Video -->
-    <div class="video-wrapper">
-      <div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;">
-        <div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><iframe
-            src="https://fast.wistia.net/embed/iframe/kl8vhx38l5?web_component=true&seo=true" title="Cold Email VSL Video"
-            allow="autoplay; fullscreen" allowtransparency="true" frameborder="0" scrolling="no" class="wistia_embed"
-            name="wistia_embed" width="100%" height="100%"></iframe></div>
-      </div>
-      <script src="https://fast.wistia.net/player.js" async></script>
-    </div>
-    
-    <!-- CTA Button -->
-    <div class="cta">
-      <div class="cta-bar">Book Your Free Strategy Call Below</div>
-      <!-- Calendly inline widget begin -->
-      <div class="calendly-inline-widget" data-url="https://calendly.com/zunaeda-canzuai/canzu-ai-discovery-call"
-        style="min-width:320px;"></div>
-      <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-      <!-- Calendly inline widget end -->
-    </div>
-    
-    <!-- Feature Tiles -->
-    <div class="features">
-      <div class="feature-tile">
-        <div class="icon">&#x2709;&#xFE0F;</div>
-        <h3>Done-For-You</h3>
-        <p>We write, send, and manage your cold email campaigns end to end.</p>
-      </div>
-      <div class="feature-tile">
-        <div class="icon">&#x2699;&#xFE0F;</div>
-        <h3>Full System Setup</h3>
-        <p>Infrastructure, domains, warmup, deliverability — all handled.</p>
-      </div>
-      <div class="feature-tile">
-        <div class="icon">&#x1F4C5;</div>
-        <h3>Meetings Booked</h3>
-        <p>Qualified prospects land on your calendar. You just show up.</p>
+  <!-- ── NAV ── -->
+  <nav>
+    <div class="container">
+      <div class="nav-inner">
+        <a href="#" class="nav-logo">
+          <img src="Logos/full-logo-darkmode.png" alt="Canzu AI">
+        </a>
+        <a href="#book" class="btn-primary">Book a Call →</a>
       </div>
     </div>
+  </nav>
 
-    <hr>
+  <!-- ── HERO ── -->
+  <section id="hero">
+    <div class="container">
+      <div class="hero-inner">
+        <div class="eyebrow fade-up">Done-For-You Cold Email</div>
+        <h1 class="hero-title fade-up d1">
+          We Book Qualified Sales Meetings Directly On Your Calendar.<br>
+          <span class="hero-highlight">You only Pay When They Show Up.</span>
+        </h1>
+        <p class="hero-guarantee fade-up d2">
+          
+        </p>
+        <div class="video-frame fade-up d3">
+          <div class="video-responsive">
+            <iframe
+              src="https://fast.wistia.net/embed/iframe/kl8vhx38l5?web_component=true&seo=true"
+              title="Canzu AI VSL"
+              allow="autoplay; fullscreen"
+              allowtransparency="true"
+              frameborder="0"
+              scrolling="no">
+            </iframe>
+          </div>
+        </div>
+        <div class="hero-cta fade-up d4">
+          <a href="#book" class="btn-primary">Book Your Free Strategy Call →</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-      <p>&copy; 2026 Canzu AI &middot; Ontario, Canada</p>
-    </footer>
+  <!-- ── PAIN POINTS ── -->
+  <section id="pain" class="section">
+    <div class="container">
+      <div class="eyebrow">Sound Familiar?</div>
+      <h2 class="section-title">Are You Currently<br>Struggling With…</h2>
+      <div class="pain-grid">
+        <div class="pain-card">
+          <div class="card-icon">🎲</div>
+          <h3>No Predictable Pipeline</h3>
+          <p>Revenue is inconsistent and you never know where the next client is coming from. Every month feels like starting from zero.</p>
+        </div>
+        <div class="pain-card">
+          <div class="card-icon">🕐</div>
+          <h3>Wasting Time on Outreach</h3>
+          <p>Spending hours prospecting, writing emails, and following up — with little to show for it. Time you don't have.</p>
+        </div>
+        <div class="pain-card">
+          <div class="card-icon">🚩</div>
+          <h3>Agencies That Overpromise</h3>
+          <p>Tired of paying retainers upfront with nothing to show for it. Vague reports, excuses, and zero accountability.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  </div>
+  <!-- ── WHY US ── -->
+  <section id="why" class="section">
+    <div class="container">
+      <div class="eyebrow">Why Canzu AI</div>
+      <h2 class="section-title">Done for You. Zero Risk.</h2>
+      <p class="section-sub">From cold prospect to booked call, fully done for you. You only pay when we perform.</p>
+      <div class="why-grid">
+        <div class="pain-card why-card">
+          <div class="card-icon card-icon--green">✅</div>
+          <h3>Fully Done-For-You</h3>
+          <p>We handle everything end to end, from list building to reply management. You just show up to the calls.</p>
+        </div>
+        <div class="pain-card why-card">
+          <div class="card-icon card-icon--green">💰</div>
+          <h3>Performance-Based</h3>
+          <p>You only pay per meeting that shows up. Zero retainer risk. If we don't deliver, you don't pay.</p>
+        </div>
+        <div class="pain-card why-card">
+          <div class="card-icon card-icon--green">🧩</div>
+          <h3>Tailored to You</h3>
+          <p>We build every campaign from the ground up, tailored to your exact offer and target market.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <script>
-    const body      = document.body;
-    const toggle    = document.getElementById('mode-toggle');
-    const logo      = document.getElementById('logo');
-    const lightLogo = "Logos/full-logo-lightmode.png";
-    const darkLogo = "Logos/full-logo-darkmode.png";
+  <!-- ── PROCESS ── -->
+  <section id="process" class="section">
+    <div class="container">
+      <div style="text-align:center">
+        <div class="eyebrow">How It Works</div>
+        <h2 class="section-title">Three Steps to a Full Calendar</h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-num">1</div>
+          <h3>Book a Strategy Call</h3>
+          <p>We assess your offer, your market, and determine if we're the right fit to guarantee results.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">2</div>
+          <h3>We Build & Launch</h3>
+          <p>Full system setup in 3 weeks. Domains, inboxes, lists, copy, sequences, all handled.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">3</div>
+          <h3>Meetings Hit Your Calendar</h3>
+          <p>Qualified prospects get booked automatically. You show up, close deals, and grow.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    // Start in whatever mode was saved, default to light
-    if (localStorage.getItem('mode') === 'dark') {
-      body.classList.add('dark');
-      toggle.querySelector('svg').style.stroke = '#aaa';
-      toggle.style.background = '#1f1f1f';
-      toggle.style.borderColor = '#222';
-      logo.src = darkLogo;
-    } else {
-      logo.src = lightLogo;
-    }
+  <!-- ── DEEP DIVE DIAGRAM ── -->
+  <section id="deepdive" class="section">
+    <div class="container">
+      <div class="eyebrow">The System</div>
+      <h2 class="section-title">Inside the Cold Email Engine</h2>
+      <p class="section-sub">Every step is handled. Every variable is controlled. Nothing is left to chance.</p>
+      <div class="diagram-wrap">
+        <div class="diagram-card">
+          <div class="diagram-step-num">Step 01</div>
+          <h4>Onboarding</h4>
+          <p>We align on your offer, target market and goals, then build the system around that.</p>
+        </div>
+        <div class="diagram-card">
+          <div class="diagram-step-num">Step 02</div>
+          <h4>Infrastructure Setup</h4>
+          <p>Set up accounts, domains, inboxes, SPF, DKIM, DMARC and warmup so your emails hit the inbox.</p>
+        </div>
+        <div class="diagram-card">
+          <div class="diagram-step-num">Step 03</div>
+          <h4>Targeting & Copy</h4>
+          <p>We build your prospect lists and write high-converting cold email sequences for them.</p>
+        </div>
+        <div class="diagram-card">
+          <div class="diagram-step-num">Step 04</div>
+          <h4>Campaign Launch</h4>
+          <p>Sequences deployed across multiple inboxes with controlled send volume and A/B testing.</p>
+        </div>
+        <div class="diagram-card">
+          <div class="diagram-step-num">Step 05</div>
+          <h4>Reply Management</h4>
+          <p>Every positive reply is handled and converted into a booked meeting on your calendar.</p>
+        </div>
+        <div class="diagram-card">
+          <div class="diagram-step-num">Step 06</div>
+          <h4>Meeting Booked</h4>
+          <p>A qualified prospect lands on your calendar. You just join the meeting and close.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    toggle.addEventListener('click', () => {
-      const isDark = body.classList.toggle('dark');
-      toggle.querySelector('svg').style.stroke = isDark ? '#aaa' : '#E8920A';
-      toggle.style.background = isDark ? '#1f1f1f' : '#FFF3DC';
-      toggle.style.borderColor = isDark ? '#222' : '#F5A623';
-      logo.src = isDark ? darkLogo : lightLogo;
-      localStorage.setItem('mode', isDark ? 'dark' : 'light');
-    });
-  </script>
+  <!-- ── WHAT'S INCLUDED ── -->
+  <section id="included" class="section">
+    <div class="container">
+      <div class="eyebrow">What You Get</div>
+      <h2 class="section-title">Done-For-You Cold Outreach.</h2>
+      <div class="included-box">
+        <div class="checklist">
+          <div class="check-item">
+            <div class="check-icon"><svg viewBox="0 0 24 24">
+                <polyline points="20 6 9 17 4 12" />
+              </svg></div>
+            Onboarding & strategy session
+            </div>
+            <div class="check-item">
+              <div class="check-icon"><svg viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg></div>
+              Offer & ICP positioning
+            </div>
+            <div class="check-item">
+              <div class="check-icon"><svg viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg></div>
+              Domain & inbox setup
+            </div>
+            <div class="check-item">
+              <div class="check-icon"><svg viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg></div>
+              Email copywriting & sequencing
+            </div>
+            <div class="check-item">
+              <div class="check-icon"><svg viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg></div>
+              Target list building
+            </div>
+            <div class="check-item">
+              <div class="check-icon"><svg viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg></div>
+              Campaign setup
+            </div>
+            <div class="check-item">
+              <div class="check-icon"><svg viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg></div>
+              Reply management
+            </div>
+            <div class="check-item">
+              <div class="check-icon"><svg viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg></div>
+              Meeting scheduling
+            </div>
+            <div class="check-item">
+              <div class="check-icon"><svg viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg></div>
+              Weekly reporting
+            </div>
+            <div class="check-item">
+              <div class="check-icon"><svg viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg></div>
+              Campaign refinement
+            </div>
+          <div class="check-item highlight" style="grid-column: 1 / -1; border-top: 1px solid var(--border); padding-top: 20px; margin-top: 4px;">
+            <div class="check-icon"><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg></div>
+            <span style="border-bottom: 2px solid rgba(220,20,40,0.4); padding-bottom: 2px;">Pay-Per-Meeting Guarantee</span>
+          </div>
+        </div>
+        <div class="included-cta">
+          <a href="#book" class="btn-primary">Get Started →</a>
+          <p style="margin-top: 14px; font-size: 12px; color: var(--text-faint); font-family: 'Montserrat', sans-serif; letter-spacing: 0.5px;">No retainers. No risk. Pay only for results.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- ── FAQ ── -->
+  <section id="faq" class="section">
+    <div class="container">
+      <div style="text-align:center">
+        <div class="eyebrow">FAQ</div>
+        <h2 class="section-title">Everything You Need to Know</h2>
+      </div>
+      <div class="faq-list">
+        <details>
+          <summary>How quickly will I see results? <span class="faq-icon">+</span></summary>
+          <div class="faq-answer">Most clients see their first booked meetings within 2–3 weeks of launching their first campaign.</div>
+        </details>
+        <details>
+          <summary>What's the guarantee exactly? <span class="faq-icon">+</span></summary>
+          <div class="faq-answer">We guarantee that you only pay for calls with qualified prospects. If they don't show, you don't pay.</div>
+        </details>
+        <details>
+          <summary>How much of my time is required? <span class="faq-icon">+</span></summary>
+          <div class="faq-answer">Very little. We handle everything up to the call. You just need to show up, pitch, and close. Onboarding takes around 3–4 hours in the first week. And we have a quick strategy session once a week to review your results and make adjustments.</div>
+        </details>
+        <details>
+          <summary>Will this work for me? <span class="faq-icon">+</span></summary>
+          <div class="faq-answer">Cold outreach can work for any B2B business that sells a high-ticket service or product. Agencies, consultants, SaaS companies, coaches, and more. If there's a defined ICP, we can build a system around it.</div>
+        </details>
+        <details>
+          <summary>Do you charge any additional fees? <span class="faq-icon">+</span></summary>
+          <div class="faq-answer">We charge a tech fee which is used to cover the cost of all the tools and infrastructure needed to run your cold outreach campaigns. This is a recurring monthly fee that scales with volume. This cost would be needed even if you were to run cold email yourself.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── BOOK A CALL ── -->
+  <section id="book" class="section">
+    <div class="container">
+      <div style="text-align:center">
+        <div class="eyebrow">Get Started</div>
+        <h2 class="section-title">Book Your Free Strategy Call</h2>
+        <p class="section-sub" style="margin: 0 auto;">No obligation. We'll assess your offer and tell you exactly what's possible.</p>
+      </div>
+      <div class="calendly-wrap">
+        <div class="calendly-inline-widget"
+  data-url="https://calendly.com/zunaeda-canzuai/canzu-ai-discovery-call?background_color=141414&text_color=f0f0f0&primary_color=dc1428"
+  style="min-width:320px;height:700px;">
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-logo">
+          <img src="Logos/full-logo-darkmode.png" alt="Canzu AI">
+        </div>
+        <p>© 2026 Canzu AI · Ontario, Canada</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://fast.wistia.net/player.js" async></script>
+  <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 </html>
